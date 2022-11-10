@@ -24,8 +24,14 @@ const testRE = /"browseId":"UC[-_0-9A-Za-z]{21}[AQgw]"/
 
 async function getChannelIds(arguments) {
   return arguments.reduce(async (result, url) => {
-    console.log('Fetching channel id for url: ', url);
     try {
+      // check if it's a channel id
+      if (url.match(/UC[-_0-9A-Za-z]{21}[AQgw]/)) {
+        console.log('Found channel id: ', url);
+        return [...(await result), url];
+      }
+
+      console.log('Fetching channel id for url: ', url);
       const html = await rp(url)
       const oldRes = await result;
       return [...oldRes, html.match(testRE)[0].split('"')[3]];
