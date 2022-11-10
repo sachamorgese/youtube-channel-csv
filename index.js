@@ -14,11 +14,11 @@ if (!arguments.length) {
   return;
 }
 
-const fileName = arguments[filenameIndex + 1];
+// Get the filename
+const fileName = arguments[0];
 
 // remove filename and get remaining arguments
-const urls = arguments.slice(filenameIndex + 2);
-
+const urls = arguments.slice(1);
 
 const testRE = /"browseId":"UC[-_0-9A-Za-z]{21}[AQgw]"/
 
