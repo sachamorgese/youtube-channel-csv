@@ -1,0 +1,21 @@
+{
+  "name": "youtube-channel-csv",
+  "version": "1.0.0",
+  "description": "Fetch all videos from a list of youtube channels and output them as a CSV file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "csv": "^6.2.2",
+    "dotenv": "^16.0.3",
+    "puppeteer": "^19.2.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
