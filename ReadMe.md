@@ -13,10 +13,10 @@ This is a simple script to fetch the list of all videos from a youtube channel a
 ```
 API_KEY=<YOUR_API_KEY>
 ```
-* Run `node index.js <OUTPUT_FILE_NAME> <CHANNEL_ID_1> <CHANNEL_ID_2> ...`
+* Run `node index.js <OUTPUT_FILE_NAME> <CHANNEL_ID_1 or CHANNEL_URL> <CHANNEL_ID_2 or CHANNEL_URL> ...`
 * The output file will be saved as OUTPUT_FILE_NAME.csv in the root directory
 
 ## Example
 ```
-node index.js output https://www.youtube.com/channel/channel-one https://www.youtube.com/c/channel-two
+node index.js output https://www.youtube.com/channel/channel-one UC2PeMPA8PAOp-bynLoCeMLA
 ```
